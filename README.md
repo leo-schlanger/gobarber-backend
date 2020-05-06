@@ -25,4 +25,5 @@
 - [express](https://expressjs.com/pt-br/api.html)
 - [typeORM](https://typeorm.io/#/)
 - [postgreSQL](https://www.postgresql.org/)
+- [tsyringe](https://github.com/microsoft/tsyringe)
 - [jest](https://jestjs.io/docs/en/getting-started)
