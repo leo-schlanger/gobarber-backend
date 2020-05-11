@@ -26,6 +26,8 @@
 - [MongoDB](https://www.mongodb.com/)
 - [Socket.io](https://socket.io/)
 - [tsyringe](https://github.com/microsoft/tsyringe)
+- [nodemailer](https://nodemailer.com/about/)
+- [ethereal](https://ethereal.email/)
 - [jest](https://jestjs.io/docs/en/getting-started)
 
 ---
