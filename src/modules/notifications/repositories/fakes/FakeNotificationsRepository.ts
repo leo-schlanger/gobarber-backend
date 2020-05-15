@@ -14,7 +14,12 @@ class NotificationsRepository implements INotificationsRepository {
   }: ICreateNotificationDTO): Promise<Notification> {
     const notification = new Notification();
 
-    Object.assign(notification, { id: new ObjectID(), recipient_id, content });
+    Object.assign(notification, {
+      id: new ObjectID(),
+      recipient_id,
+      content,
+      read: false,
+    });
 
     this.notifications.push(notification);
 
