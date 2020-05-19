@@ -24,6 +24,8 @@
 - [typeORM](https://typeorm.io/#/)
 - [postgreSQL](https://www.postgresql.org/)
 - [MongoDB](https://www.mongodb.com/)
+- [redis](https://redis.io/)
+- [node-rate-limiter-flexible](https://www.npmjs.com/package/rate-limiter-flexible)
 - [Socket.io](https://socket.io/)
 - [tsyringe](https://github.com/microsoft/tsyringe)
 - [class transformer](https://github.com/typestack/class-transformer)
