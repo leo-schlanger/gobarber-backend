@@ -6,6 +6,7 @@
 ---
 
 # 📓  Description
+  An application developed in nodejs with the purpose of facilitating the service scheduling of barbers. It will store all customers and barbers and book appointments. Application developed in Rocketseat's GoStack Bootcamp. 🚀
 
 ---
 
@@ -35,6 +36,7 @@
 - [jest](https://jestjs.io/docs/en/getting-started)
 
 ---
+
 # 📦 System Features Mapping
 
 ## Password Recovery
@@ -107,3 +109,12 @@
   - The user cannot schedule at an already busy appointment;
   - The user cannot schedule an appointment that has already passed;
   - The user cannot schedule services with himself;
+
+---
+
+# 📝 License
+This project is under the MIT license. See the [LICENSE](https://github.com/leo-schlanger/gobarber-backend/blob/master/LICENSE) for more information.
+
+---
+
+Made by Leo Schlanger
