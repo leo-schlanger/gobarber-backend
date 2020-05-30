@@ -1,9 +1,10 @@
 <div align="center">
-  <img width="300" src="./assets/logo.png" />
 
-  # In development...
+
+  ![GoBarber](./assets/logo.png)
+  # GoBarber API
+  ### Barbershop scheduling and management platform
 </div>
----
 
 # 📓  Description
   An application developed in nodejs with the purpose of facilitating the service scheduling of barbers. It will store all customers and barbers and book appointments. Application developed in Rocketseat's GoStack Bootcamp. 🚀
@@ -112,9 +113,28 @@
 
 ---
 
+# 📌 How to contribute
+
+Fork this repository.
+
+```bash
+# Clone the repository
+$ git clone <repository-url> && cd <repository-folder>
+
+# Create a branch with your feature or bug fix
+$ git checkout -b <my-branch>
+
+# Commit your changes
+$ git commit -m 'feature/bugfix: my changes description'
+
+# push to your branch
+$ git push origin <my-branch>
+```
+
+After the merge of your pull request is done, you can delete your branch.
 # 📝 License
 This project is under the MIT license. See the [LICENSE](https://github.com/leo-schlanger/gobarber-backend/blob/master/LICENSE) for more information.
 
 ---
 
-Made by Leo Schlanger
+Made by Leo Schlanger [Get in touch!](https://www.linkedin.com/in/leo-schlanger-226467192/)
