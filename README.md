@@ -6,7 +6,19 @@
   ### Barbershop scheduling and management platform
 </div>
 
+- [📓  Description](#📓-description)
+- [📐  Architecture](#📐-architecture)
+- [🚀 Technologies](#🚀-technologies)
+- [📦 System Features Mapping](#📦-system-features-mapping)
+  - [Password Recovery](#password-recovery)
+  - [Profile Update](#profile-update)
+  - [Provider Dashboard](#provider-dashboard)
+  - [Appointments Services](#appointments-services)
+- [📌 How to contribute](#📌-how-to-contribute)
+- [📝 License](#📝-license)
+
 # 📓  Description
+
   An application developed in nodejs with the purpose of facilitating the service scheduling of barbers. It will store all customers and barbers and book appointments. Application developed in Rocketseat's GoStack Bootcamp. 🚀
 
 ---
@@ -132,7 +144,9 @@ $ git push origin <my-branch>
 ```
 
 After the merge of your pull request is done, you can delete your branch.
+
 # 📝 License
+
 This project is under the MIT license. See the [LICENSE](https://github.com/leo-schlanger/gobarber-backend/blob/master/LICENSE) for more information.
 
 ---
