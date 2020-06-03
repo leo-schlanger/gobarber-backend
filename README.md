@@ -6,24 +6,24 @@
   ### Barbershop scheduling and management platform
 </div>
 
-- [📓  Description](#📓-description)
-- [📐  Architecture](#📐-architecture)
-- [🚀 Technologies](#🚀-technologies)
-- [📦 System Features Mapping](#📦-system-features-mapping)
+- [📓  Description](#description)
+- [📐  Architecture](#architecture)
+- [🚀 Technologies](#technologies)
+- [📦 System Features Mapping](#system-features-mapping)
   - [Password Recovery](#password-recovery)
   - [Profile Update](#profile-update)
   - [Provider Dashboard](#provider-dashboard)
   - [Appointments Services](#appointments-services)
-- [📌 How to contribute](#📌-how-to-contribute)
-- [📝 License](#📝-license)
+- [📌 How to contribute](#how-to-contribute)
+- [📝 License](#license)
 
-# 📓  Description
+# Description
 
   An application developed in nodejs with the purpose of facilitating the service scheduling of barbers. It will store all customers and barbers and book appointments. Application developed in Rocketseat's GoStack Bootcamp. 🚀
 
 ---
 
-# 📐  Architecture
+# Architecture
 
 - [SOLID](https://en.wikipedia.org/wiki/SOLID)
 - [DDD  (Domain-Driven Design)](https://en.wikipedia.org/wiki/Domain-driven_design)
@@ -31,7 +31,7 @@
 
 ---
 
-# 🚀 Technologies
+# Technologies
 
 - [node.js](https://nodejs.org/en/docs/)
 - [express](https://expressjs.com/pt-br/api.html)
@@ -50,7 +50,7 @@
 
 ---
 
-# 📦 System Features Mapping
+# System Features Mapping
 
 ## Password Recovery
 
@@ -125,7 +125,7 @@
 
 ---
 
-# 📌 How to contribute
+# How to contribute
 
 Fork this repository.
 
@@ -145,10 +145,10 @@ $ git push origin <my-branch>
 
 After the merge of your pull request is done, you can delete your branch.
 
-# 📝 License
+# License
 
 This project is under the MIT license. See the [LICENSE](https://github.com/leo-schlanger/gobarber-backend/blob/master/LICENSE) for more information.
 
 ---
 
-Made by Leo Schlanger [Get in touch!](https://www.linkedin.com/in/leo-schlanger-226467192/)
+Made by Leo Schlanger :wave:[Get in touch!](https://www.linkedin.com/in/leo-schlanger-226467192/)
