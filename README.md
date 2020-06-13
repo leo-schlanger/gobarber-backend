@@ -6,6 +6,14 @@
 
 ![GoBarber](./assets/logo.png)
 
+![languages](https://img.shields.io/github/languages/count/leo-schlanger/backend-gobarber?style=plastic)
+<space><space>
+![toplanguage](https://img.shields.io/github/languages/top/leo-schlanger/backend-gobarber?style=plastic)
+<space><space>
+![reposize](https://img.shields.io/github/repo-size/leo-schlanger/backend-gobarber?style=plastic)
+<space><space>
+[![licence](https://img.shields.io/github/license/leo-schlanger/gobarber-backend?style=plastic)](https://github.com/leo-schlanger/gobarber-backend/blob/master/LICENSE)
+
 </div>
 
 - [Description](#description)
@@ -135,6 +143,75 @@
 
 ---
 
+<a id="how-to-use" />
+
+# :gear: How to use
+
+Before using the api, make sure you have installed the Postgres, Mongodb and Redis databases on your machine or have your own server running. I recommend using the [docker](https://docs.docker.com/get-docker/) on your machine if you have to install it yet.
+
+If you choose to use the docker and have it installed on your machine, run the following commands to create the database containers:
+
+```bash
+# Create postgres database
+$ docker run --name <name> -e POSTGRES_PASSWORD=<password> -p 5432:5432 -d postgres
+
+# Create mongodb database
+$ docker run --name <name> -p 27017:27017 -d -t mongo
+
+# Create redis database
+$ docker run --name <name> -p 6379:6379 -d -t redis:alpine
+```
+That done, in the file inside the project "ormconfig.json.example" change the fields according to your database data and delete the ".example" from the file name.
+
+```json
+[
+  {
+    "type":"postgres",
+    "host":"localhost",
+    "port": 5432,
+    "username":<username>,
+    "password":<password>,
+    "database":<databasename>,
+    "entities":[
+      "./src/**/entities/*.ts"
+    ],
+    "migrations":[
+      "./src/shared/infra/typeorm/migrations/*.ts"
+    ],
+    "cli":{
+      "migrationsDir": "./src/shared/infra/typeorm/migrations"
+    }
+  },
+  {
+    "name":"mongo",
+    "type":"mongodb",
+    "host":"localhost",
+    "port": 27017,
+    "database":<databasename>,
+    "useUnifiedTopology": true,
+    "entities":[
+      "./src/**/schemas/*.ts"
+    ]
+  }
+]
+```
+In the ".env.example" file you have base settings where you can define a secret word for token generation by jwt and the application's URL, you can leave it as is or configure as you like. In addition, the application has the option to use AWS service (Amazon SES and Amazon S3) if you have an account, just change the fields MAIL_DRIVER to 'ses' and STORAGE_DRIVER to 's3' and fill in the commented credential fields. That done, delete the ".example" from the file, leaving only ".env".
+
+After completing these steps, you can do the following steps in the terminal:
+
+```Bash
+# Create all tables in the database
+$ yarn typeorm migration:run
+
+# Install all dependencies
+$ yarn install
+
+# Run API
+$ yarn dev:server
+```
+
+---
+
 <a id="how-to-contribute" />
 
 # :pushpin: How to contribute
@@ -151,7 +228,7 @@ $ git checkout -b <my-branch>
 # Commit your changes
 $ git commit -m 'feature/bugfix: my changes description'
 
-# push to your branch
+# Push to your branch
 $ git push origin <my-branch>
 ```
 
@@ -167,4 +244,4 @@ This project is under the MIT license. See the [LICENSE](https://github.com/leo-
 
 ---
 
-Made by Leo Schlanger :wave:[Get in touch!](https://www.linkedin.com/in/leo-schlanger-226467192/)
+Made by Leo Schlanger :wave: [Get in touch!](https://www.linkedin.com/in/leo-schlanger-226467192/)
