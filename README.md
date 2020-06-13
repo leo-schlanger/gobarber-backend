@@ -20,6 +20,7 @@
 - [Architecture](#architecture)
 - [Technologies](#technologies)
 - [System Features Mapping](#system-features-mapping)
+- [How to use](#how-to-use)
 - [How to contribute](#how-to-contribute)
 - [License](#license)
 
