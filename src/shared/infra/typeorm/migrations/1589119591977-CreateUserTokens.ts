@@ -50,6 +50,7 @@ export default class CreateUserTokens1589119591977
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
+    await queryRunner.dropForeignKey('user_tokens', 'TokenUser');
     await queryRunner.dropTable('user_tokens');
   }
 }
